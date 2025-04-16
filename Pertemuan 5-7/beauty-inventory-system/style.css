@@ -1,0 +1,142 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    background-color: #f9f1f8; /* Light pink background */
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #d4a5e5; /* Lavender sidebar */
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sidebar ul li:hover {
+    background-color: #c68ed9; /* Slightly darker lavender on hover */
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #ff6f91; /* Cute pink for headings */
+}
+
+.product-form {
+    background-color: #fff0f5; /* Very light pink */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    color: #ff6f91;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ffb6c1;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    background-color: #ffb6c1; /* Pastel pink button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    background-color: #ff99ac; /* Slightly darker pink on hover */
+}
+
+#cancel-edit {
+    background-color: #d3d3d3; /* Gray for cancel button */
+}
+
+#cancel-edit:hover {
+    background-color: #b0b0b0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #f0e6f0;
+}
+
+th {
+    background-color: #c1e1c1; /* Mint green for table header */
+    color: #ff6f91;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f1f8; /* Light pink for even rows */
+}
+
+tr:hover {
+    background-color: #f0e6f0; /* Slightly darker pink on hover */
+}
+
+.action-btn {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.edit-btn {
+    background-color: #add8e6; /* Light blue for edit */
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #87ceeb;
+}
+
+.delete-btn {
+    background-color: #ffb6c1; /* Pink for delete */
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #ff99ac;
+}
