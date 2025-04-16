@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Product Inventory</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li>Beauty Product Inventory</li>
+            <li>Summary</li>
+            <li>Stock Adjustment</li>
+            <li>Charges</li>
+            <li>Stock List</li>
+            <li>Stock Report</li>
+            <li>Product Ledger</li>
+            <li>Setting</li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Beauty Product Inventory</h1>
+
+        <!-- Form to Add/Edit Product -->
+        <div class="product-form">
+            <h2>Add New Product</h2>
+            <form id="product-form">
+                <input type="hidden" id="product-id" name="id">
+                <div class="form-group">
+                    <label for="product_name">Product Name:</label>
+                    <input type="text" id="product_name" name="product_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="merk">Merk (Brand):</label>
+                    <input type="text" id="merk" name="merk" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <input type="text" id="category" name="category" required>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" required>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input type="number" step="0.01" id="price" name="price" required>
+                </div>
+                <button type="submit">Add Product</button>
+                <button type="button" id="cancel-edit" style="display: none;">Cancel Edit</button>
+            </form>
+        </div>
+
+        <!-- Product Table -->
+        <h2>Inventory List</h2>
+        <table id="products-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Merk</th>
+                    <th>Category</th>
+                    <th>Qty.</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
